@@ -1,1 +1,1 @@
-# image-gallery
+# IMAGE GALLERY : THE CURVE
