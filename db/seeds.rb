@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+# User.create!(name: "John Doe", email: "johndoe@example.com", password_digest: "password")
+# Gallery.create!(title: "Gallery 101", description: "This is the first gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
+Gallery.create!(title: "Gallery 301", description: "This is the third gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
+Gallery.create!(title: "Gallery 301", description: "This is the third gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
