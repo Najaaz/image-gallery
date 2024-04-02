@@ -10,4 +10,6 @@
 # User.create!(name: "John Doe", email: "johndoe@example.com", password_digest: "password")
 # Gallery.create!(title: "Gallery 101", description: "This is the first gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
 Gallery.create!(title: "Gallery 301", description: "This is the third gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
-Gallery.create!(title: "Gallery 301", description: "This is the third gallery.", cover_image_url: "https://via.placeholder.com/150", user_id: User.first)
+GalleryImages.create!(image_url: "https://via.placeholder.com/250", gallery_id: Gallery.first)
+GalleryImages.create!(image_url: "https://via.placeholder.com/450", gallery_id: Gallery.first)
+GalleryImages.create!(image_url: "https://via.placeholder.com/300", gallery_id: Gallery.first)

@@ -1,7 +1,8 @@
-<div class="card">
-    <img src="https://via.placeholder.com/375x300?text=Gallery+1" alt="Gallery 1" />
+<div class="card my-2">
+    <img src="<%= card[:cover_image_url] %>" alt="Gallery 1" />
     <div class="gallery-info">
-        <h2 class="gallery-title"> <%= card[:title] %> </h2>
+        <h2 class="gallery-title text-uppercase fw-bold"> <%= card[:title] %> </h2>
         <p class="gallery-description"> <%= card[:description] %> </p>
+        <a href="gallery/<%= card[:id] %>" class="btn btn-primary my-2 fw-bold">View Gallery</a>
     </div>
 </div>

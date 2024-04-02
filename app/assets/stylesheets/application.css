@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -13,5 +22,21 @@ header {
 .gallery-description {
     margin: 0;
     color: #777;
+}
+
+.card img {
+    min-width: 300px;
+}
+
+.lock-ratio{
+    object-fit: contain;
+    height: 50%;
+    max-width: 46%;
+    transition: all 0.3s ease-in-out;
+}
+
+.lock-ratio:hover {
+    transform: scale(1.06);
+    filter: brightness(80%);
 }
 
