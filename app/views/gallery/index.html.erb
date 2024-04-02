@@ -3,15 +3,22 @@
     <h1 class="text-center w-100 fw-bold my-1"><%= @gallery[:title] %></h1>
     <h5 class="text-center w-100 mt-0 mb-4">By: <%= @user[:name] %></h5>
 
-    <div class="">
+    <div class="w-100">
         <%= link_to 'Back to all Galleries', root_path, class:"btn btn-primary my-2 fw-bold" %>
     </div>
+
     
     <div class="d-flex flex-wrap justify-content-evenly">
         <% @gallery_images.each do |image| %>
-            <img src="<%= image[:image_url] %>" class="rounded m-2 lock-ratio" alt="Gallery Image">
-            <img src="<%= image[:image_url] %>" class="rounded m-2 lock-ratio" alt="Gallery Image">
+            <div class="img-holder m-2">
+                <img src="<%= image[:image_url] %>" class="rounded" alt="Gallery Image" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+            </div>
+            <div class="img-holder m-2">
+                <img src="<%= image[:image_url] %>" class="rounded" alt="Gallery Image" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+            </div>
         <% end %>
     </div>
     
 </main>
+
+<%= render 'popup'%>
