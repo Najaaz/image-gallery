@@ -8,13 +8,10 @@
     </div>
 
     
-    <div class="d-flex flex-wrap justify-content-evenly">
-        <% @gallery_images.each do |image| %>
+    <div class="d-flex flex-wrap justify-content-around">
+        <% @gallery_images.each_with_index do |image, index| %>
             <div class="img-holder m-2">
-                <img src="<%= image[:image_url] %>" class="rounded" alt="Gallery Image" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
-            </div>
-            <div class="img-holder m-2">
-                <img src="<%= image[:image_url] %>" class="rounded" alt="Gallery Image" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                <img src="<%= image[:image_url] %>" class="rounded" alt="Gallery Image" data-bs-toggle="modal" href="#exampleModalToggle" role="button" data-button-id="<%= index %>">
             </div>
         <% end %>
     </div>
